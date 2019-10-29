@@ -1,0 +1,83 @@
+.triangle{
+    width: 0px;
+    height: 0px;
+    margin:50px;
+    border-color: transparent;
+    border-width: 80px;
+    border-style: solid;
+    
+}
+#tr1{
+   border-bottom-color: black;
+   border-bottom-width: 80px;
+   border-bottom-style: solid;
+
+   animation-name: tri1;
+   animation-duration: 3s;
+ /*  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);*/
+   animation-iteration-count: infinite;
+   
+
+
+}
+
+#tr2{
+      border-top-color: red;
+   border-top-width: 80px;
+   border-top-style: solid;
+
+   animation-name: tri2;
+   animation-duration: 3s;
+  /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);*/
+   animation-iteration-count: infinite;
+}
+
+
+@keyframes tri1{
+    0%{
+        transform:translate(50px, 50px);
+    
+    }
+    50%{
+        transform:translate(200px, 250px);
+       
+    }
+
+    90%{
+        transform:translate(400px, 400px);
+      
+      
+    }
+    91%{
+        transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes tri2{
+    0%{
+        transform:translate(400px, 400px);
+        
+    }
+    50%{
+        transform:translate(200px, 150px);
+      
+        
+    }
+
+    90%{
+        transform:translate(50px, 50px);
+        
+      
+    }
+    91%{
+        transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(360deg);
+       
+        
+    }
+}
